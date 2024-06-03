@@ -54,7 +54,7 @@ class NewsCrawlerSpider(scrapy.Spider):
             }
             full_url = f"{url}?{'&'.join([f'{key}={value}' for key, value in query_params.items()])}"
             
-            ar_payload = { 'api_key': '14ce6a05fd80c316f5ebf04800c0aeee', 'url': full_url } 
+            ar_payload = { 'api_key': '', 'url': full_url } 
 
             scraper_url = 'https://api.scraperapi.com/?'
         
